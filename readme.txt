@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal%4
 Tags: get free web designs, widget, feed, web design
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 This widget will show the most recent designs from <a href="http://www.getfreewebdesigns.com">Get Free Web Designs</a>. Requires PHP5.
 

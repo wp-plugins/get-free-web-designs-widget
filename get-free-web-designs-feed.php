@@ -3,7 +3,7 @@
  * Plugin Name: Get Free Web Designs Widget
  * Plugin URI: http://xavisys.com/2009/02/get-free-web-designs-widget/
  * Description: Shows a feed of recent <a href="http://www.getfreewebdesigns.com">Get Free Web Designs</a> templates
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Aaron D. Campbell
  * Author URI: http://xavisys.com/
  */
@@ -132,9 +132,6 @@ class wpGFWDFeed
 
 				$output .= '<li>';
 				$output .= "<a href='{$link}' title='View Template'><img src='{$imgPath}' alt='View Template' class='gfwd-ss' style='width:100%;' /></a>\n";
-				/**
-				 * @todo allow color choice for icon
-				 */
 				$output .= "<p><a href='http://www.getfreewebdesigns.com/designs/?id={$urlParams['template']}' title='Download Design Above'><img src='" . plugins_url( dirname( plugin_basename(__FILE__) ) ). "/img/download-page-{$options[$number]['iconcolor']}.gif' alt='download' /> Download Design</a></p>\n";
 
 				$output .= '</li>';
@@ -144,7 +141,7 @@ class wpGFWDFeed
 		if (empty($output)) {
 			return;
 		} else {
-			//$output .= '<li><a href="http://www.getfreewebdesigns.com" title="Download free web templates">Download free web templates</a></li>';
+			$output .= '<li><a href="http://www.getfreewebdesigns.com" title="Download free XHTML and CSS templates"><small>Get Free Web Designs</small></a></li>';
 		}
 
 		echo $before_widget;
